@@ -1,0 +1,106 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .about {
+    width: 100%;
+    height: 930px;
+    padding-top: 30px;
+    background-color: #ffffff;
+  }
+  
+  .about img {
+    height: auto;
+    width: 420px;
+  }
+  
+  .about-text {
+    margin-left: 30px;
+    width: 550px;
+  }
+  
+  .main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .about-text h1 {
+    color: #fff;
+    font-size: 60px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+  
+  .about-text h5 {
+    color: #fff;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+  }
+  .about-text h1 {
+    color: #860000;
+    font-size: 60px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+  
+  .about-text h5 {
+    color: #860000;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+  }
+  
+  span {
+    color: #3d3d3d;
+  }
+  
+  .about-text p {
+    color: #3d3d3d;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+  }
+  
+  button {
+    background: #860000;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 32px;
+    border-radius: 30px;
+    transition: .4s;
+  }
+  
+  button:hover {
+    background-color: white;
+    border: 2px solid #860000;
+    cursor: pointer;
+    color: #860000;
+  }
+  
+  .simulator-link {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 18px;
+    padding: 10px 20px; /* Linklerin iç boşluğu */
+    border-radius: 5px; /* Köşeleri yuvarlak yap */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Geçiş efekti */
+    margin: 0 20px; /* Linkler arasındaki boşluk */
+}
+
+.simulator-link:hover {
+    background-color: #ecf0f1; /* Hover olduğunda arka plan rengi */
+    color: #860000; /* Hover olduğunda yazı rengi */
+}

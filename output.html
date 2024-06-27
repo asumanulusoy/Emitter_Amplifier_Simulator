@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outputs</title>
+    <link href="css/file.css" rel="stylesheet" >
+    <style>
+    .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+   .title, .subtitle {
+        font-size: 24px;
+        text-align: center;
+        color: #333; /* Dark grey text color */
+    }
+
+  .result-text {
+    width: 85%; /* Giriş alanlarına benzer genişlik */
+    padding: 8px; /* Yeterli iç boşluk */
+    border: 1px solid #ccc; /* Hafif gri çerçeve */
+    border-radius: 5px; /* Yuvarlatılmış köşeler */
+    font-size: 16px; /* Okunabilir font boyutu */
+    margin: 10px 0; /* Üst ve alttan boşluk */
+    display: block; /* Yeni satırda başlat */
+    color: black; /* Karanlık yazı rengi */
+    background-color: #fff; /* Beyaz arka plan */
+    
+  }
+
+    </style>
+</head>
+
+<body>
+    <header> <section style=" background-color: #860000; 
+        color: #ecf0f1; 
+        padding: 18px 0; 
+        text-align: center; 
+        font-size: 36px; 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+        transition: background-color 0.3s ease;">
+        Emitter Amplifier Simulator <!-- Başlık metni -->
+    </section>
+
+    </header>
+    <header2> <section style="text-decoration: none; 
+        background-color: #7c6767;
+        color: white;
+        text-align: center;
+        padding: 10px 0; /* Yükseklik için padding eklendi */
+        display: flex; /* Menü öğelerini yan yana hizalamak için flex kullanıldı */
+        justify-content: center; /* Menü öğelerini merkezlemek için */
+        align-items: center; /* Yatayda ve dikeyde merkezlemek için */
+        gap: 20px;"> <!-- Linkler arasında boşluk için --><div>
+          <a href="anasayfa.html" class="simulator-link">Anasayfa</a>
+          <a href="genel.html" class="simulator-link">Genel</a>
+          <a href="inputs.html" class="simulator-link">İnputs</a>
+          <a href="output.html" class="simulator-link">Outputs</a>
+          <a href="görseller.html" class="simulator-link">Görseller</a></section>
+      </div>
+    </header2>
+      
+    <div class="container">
+        <div class="column3">
+            <div class="schematic" id="schematic1">
+                <div class=".small-rectangle">
+                    <div class="result"> 
+                    <h3 class="subtitle">DC Devre Sonuçları</h3>
+                    <textarea id="result_dc" class="result-text" rows="11" readonly></textarea>
+                 </div>
+                  </div>
+                <div class="result"> 
+                    <h3 class="subtitle">AC Devre Sonuçları</h3> </section>
+                    <textarea id="result_ac" class="result-text" rows="12"  readonly></textarea>
+    </div>
+                 
+                    <div class="schematic" id="schematic3">
+                      <h1 class="plot-title" style="text-align: center;">Zamanla Değişen Giriş ve Çıkış Gerilimi Grafiği</h1>
+                       <div class="plot-container">
+                        <canvas id="plot-canvas" class="plot-canvas"></canvas>
+                        <div class="axis-label x-label">Time (s)</div>
+                        <div class="axis-label y-label">Voltage (V)</div>
+                      </div>
+                      </div>
+                     </div>
+               </div>
+            </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/output.js"></script>
+</body>
+
+</html>
